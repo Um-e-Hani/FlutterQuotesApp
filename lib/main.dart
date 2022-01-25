@@ -30,7 +30,10 @@ class _QuoteListState extends State<QuoteList> {
             .map((quote) => Container(
                   color: Colors.grey[400],
                   padding: EdgeInsets.all(20.0),
-                  child: Text("${quote.text} - ${quote.author}"),
+                  child: Text(
+                    "${quote.text} - ${quote.author}",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ))
             .toList(), //Map
       ), //Column
