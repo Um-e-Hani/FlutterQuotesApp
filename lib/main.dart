@@ -34,10 +34,11 @@ class _QuoteListState extends State<QuoteList> {
                     Container(
                         padding: EdgeInsets.all(10.0),
                         color: Colors.grey[400],
-                        child: Text(
+                        child: Center(
+                            child: Text(
                           "${quote.text} - ${quote.author}",
                           style: TextStyle(fontWeight: FontWeight.bold),
-                        )),
+                        ))),
                     SizedBox(
                       height: 1.0,
                     ),
