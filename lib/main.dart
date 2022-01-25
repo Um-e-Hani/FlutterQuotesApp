@@ -29,24 +29,26 @@ class _QuoteListState extends State<QuoteList> {
       ), //AppBar
       body: Column(
         children: quotes
-            .map((quote) => Container(
-                margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
-                color: Colors.red[600],
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.all(10.0),
-                      color: Colors.red[200],
-                      child: Text(
-                        "${quote.text} - ${quote.author}",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+            .map(
+              (quote) => Container(
+                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
+                  color: Colors.red[600],
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        color: Colors.red[200],
+                        child: Text(
+                          "${quote.text} - ${quote.author}",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 1.0,
-                    ),
-                  ],
-                )))
+                      SizedBox(
+                        height: 1.0,
+                      ),
+                    ],
+                  )),
+            )
             .toList(), //Map
       ), //Column
     ); // Scaffold
