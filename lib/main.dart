@@ -19,7 +19,7 @@ class _QuoteListState extends State<QuoteList> {
   ];
 
   Widget quoteTemplate(quote) {
-    return Container(
+    return Card(
       margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
       color: Colors.red[600],
       child: Column(
