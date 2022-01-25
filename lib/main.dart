@@ -28,13 +28,19 @@ class _QuoteListState extends State<QuoteList> {
       body: Column(
         children: quotes
             .map((quote) => Container(
-                  color: Colors.grey[400],
-                  padding: EdgeInsets.all(20.0),
-                  child: Text(
-                    "${quote.text} - ${quote.author}",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ))
+                color: Colors.grey[400],
+                padding: EdgeInsets.all(20.0),
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      "${quote.text} - ${quote.author}",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                  ],
+                )))
             .toList(), //Map
       ), //Column
     ); // Scaffold
