@@ -28,15 +28,7 @@ class _QuoteListState extends State<QuoteList> {
             padding: EdgeInsets.all(10.0),
             color: Colors.red[200],
             child: Text(
-              quote.text,
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.all(10.0),
-            color: Colors.red[200],
-            child: Text(
-              quote.author,
+              "${quote.text} - ${quote.author}",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
