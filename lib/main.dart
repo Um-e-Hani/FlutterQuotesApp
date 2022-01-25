@@ -19,7 +19,7 @@ class _QuoteListState extends State<QuoteList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[200],
+      backgroundColor: Colors.red[100],
       appBar: AppBar(
         title: Text("Amazing Quotations"), // Text
         centerTitle: true,
@@ -33,7 +33,7 @@ class _QuoteListState extends State<QuoteList> {
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.all(10.0),
-                      color: Colors.red[100],
+                      color: Colors.red[200],
                       child: Text(
                         "${quote.text} - ${quote.author}",
                         style: TextStyle(fontWeight: FontWeight.bold),
