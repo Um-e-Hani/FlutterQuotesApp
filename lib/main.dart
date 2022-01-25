@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'quote.dart';
 
 void main() => runApp(MaterialApp(
       home: QuoteList(),
@@ -9,10 +10,10 @@ class QuoteList extends StatefulWidget {
 }
 
 class _QuoteListState extends State<QuoteList> {
-  List<String> quotes = [
-    "It is during our darkest moments that we must focus to see the light.",
-    "Whoever is happy will make others happy too.",
-    "Always remember that you are absolutely unique. Just like everyone else."
+  List<Quote> quotes = [
+    Quote(text: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle"),
+    Quote(text: "Whoever is happy will make others happy too.", author: "Anne Frank"),
+    Quote(text: "Always remember that you are absolutely unique. Just like everyone else.", author: "Margaret Mead")
   ];
 
   @override
