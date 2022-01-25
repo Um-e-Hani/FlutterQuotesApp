@@ -29,6 +29,7 @@ class _QuoteListState extends State<QuoteList> {
         children: quotes
             .map((quote) => Container(
                 margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
+                color: Colors.red[600],
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -40,7 +41,6 @@ class _QuoteListState extends State<QuoteList> {
                       ),
                     ),
                     SizedBox(
-                      color: Color.red[600],
                       height: 1.0,
                     ),
                   ],
