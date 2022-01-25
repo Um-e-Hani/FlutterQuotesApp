@@ -19,7 +19,7 @@ class _QuoteListState extends State<QuoteList> {
   ];
 
   Widget quoteTemplate(quote) {
-    return new QuoteCard();
+    return QuoteCard(quote: quote);
   }
 
   @override
@@ -39,6 +39,9 @@ class _QuoteListState extends State<QuoteList> {
 }
 
 class QuoteCard extends StatelessWidget {
+  final Quote quote;
+
+  QuoteCard({required this.quote});
   @override
   Widget build(BuildContext context) {
     return Card(
