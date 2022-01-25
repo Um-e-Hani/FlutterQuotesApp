@@ -40,6 +40,7 @@ class _QuoteListState extends State<QuoteList> {
                       ),
                     ),
                     SizedBox(
+                      color: Color.red[600],
                       height: 1.0,
                     ),
                   ],
