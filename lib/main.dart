@@ -33,7 +33,7 @@ class _QuoteListState extends State<QuoteList> {
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.all(10.0),
-                      color: Colors.red[400],
+                      color: Colors.red[100],
                       child: Text(
                         "${quote.text} - ${quote.author}",
                         style: TextStyle(fontWeight: FontWeight.bold),
