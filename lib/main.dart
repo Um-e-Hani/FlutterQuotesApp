@@ -39,7 +39,7 @@ class _QuoteListState extends State<QuoteList> {
                           style: TextStyle(fontWeight: FontWeight.bold),
                         )),
                     SizedBox(
-                      height: 3.0,
+                      height: 1.0,
                     ),
                   ],
                 )))
