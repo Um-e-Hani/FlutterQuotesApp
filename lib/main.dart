@@ -18,7 +18,7 @@ class _QuoteListState extends State<QuoteList> {
     Quote(text: 'You will face many defeats in life, but never let yourself be defeated.', author: 'Maya Angelou')
   ];
 
-  List qouteTemplate(quote) {
+  Widget quoteTemplate(quote) {
     return Container(
       margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
       color: Colors.red[600],
