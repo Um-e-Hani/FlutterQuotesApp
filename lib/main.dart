@@ -18,6 +18,28 @@ class _QuoteListState extends State<QuoteList> {
     Quote(text: 'You will face many defeats in life, but never let yourself be defeated.', author: 'Maya Angelou')
   ];
 
+  Widget quoteTemplate(quote) {
+    return Card(
+      margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
+      color: Colors.red[600],
+      child: Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(10.0),
+            color: Colors.red[200],
+            child: Text(
+              "${quote.text} - ${quote.author}",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(
+            height: 1.0,
+          ),
+        ],
+      ),
+    ); // Container
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,26 +50,7 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.red[600],
       ), //AppBar
       body: Column(
-        children: quotes
-            .map((quote) => Container(
-                margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
-                color: Colors.red[600],
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.all(10.0),
-                      color: Colors.red[200],
-                      child: Text(
-                        "${quote.text} - ${quote.author}",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 1.0,
-                    ),
-                  ],
-                )))
-            .toList(), //Map
+        children: quotes.map((quote) => quoteTemplate(quote)).toList(), //Map
       ), //Column
     ); // Scaffold
   }
