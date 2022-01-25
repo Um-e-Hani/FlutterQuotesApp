@@ -29,6 +29,7 @@ class _QuoteListState extends State<QuoteList> {
         children: quotes
             .map((quote) => Container(
                 margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                padding: EdgeInsets.all(10.0),
                 child: Column(
                   children: <Widget>[
                     Container(
