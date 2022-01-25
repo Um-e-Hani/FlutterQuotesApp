@@ -26,7 +26,13 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.redAccent,
       ), //AppBar
       body: Column(
-        children: quotes.map((quote) => Text("${quote.text} - ${quote.author}")).toList(), //Map
+        children: quotes
+            .map((quote) => Container(
+                  color: Colors.grey[400],
+                  padding: EdgeInsets.all(20.0),
+                  child: Text("${quote.text} - ${quote.author}"),
+                ))
+            .toList(), //Map
       ), //Column
     ); // Scaffold
   }
