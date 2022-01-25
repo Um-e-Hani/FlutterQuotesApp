@@ -19,6 +19,28 @@ class _QuoteListState extends State<QuoteList> {
   ];
 
   Widget quoteTemplate(quote) {
+    return new QuoteCard();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.red[100],
+      appBar: AppBar(
+        title: Text("Amazing Quotations"), // Text
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ), //AppBar
+      body: Column(
+        children: quotes.map((quote) => quoteTemplate(quote)).toList(), //Map
+      ), //Column
+    ); // Scaffold
+  }
+}
+
+class QuoteCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
       color: Colors.red[600],
@@ -37,21 +59,6 @@ class _QuoteListState extends State<QuoteList> {
           ),
         ],
       ),
-    ); // Container
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.red[100],
-      appBar: AppBar(
-        title: Text("Amazing Quotations"), // Text
-        centerTitle: true,
-        backgroundColor: Colors.red[600],
-      ), //AppBar
-      body: Column(
-        children: quotes.map((quote) => quoteTemplate(quote)).toList(), //Map
-      ), //Column
-    ); // Scaffold
+    ); // Card
   }
 }
