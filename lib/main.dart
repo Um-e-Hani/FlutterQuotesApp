@@ -23,7 +23,7 @@ class _QuoteListState extends State<QuoteList> {
       appBar: AppBar(
         title: Text("Amazing Quotations"), // Text
         centerTitle: true,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.red[600],
       ), //AppBar
       body: Column(
         children: quotes
@@ -33,7 +33,7 @@ class _QuoteListState extends State<QuoteList> {
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.all(10.0),
-                      color: Colors.grey[400],
+                      color: Colors.red[400],
                       child: Text(
                         "${quote.text} - ${quote.author}",
                         style: TextStyle(fontWeight: FontWeight.bold),
