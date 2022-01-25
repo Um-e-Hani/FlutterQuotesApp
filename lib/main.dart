@@ -13,7 +13,9 @@ class _QuoteListState extends State<QuoteList> {
   List<Quote> quotes = [
     Quote(text: 'It is during our darkest moments that we must focus to see the light.', author: 'Aristotle'),
     Quote(text: 'Whoever is happy will make others happy too.', author: 'Anne Frank'),
-    Quote(text: 'Always remember that you are absolutely unique. Just like everyone else.', author: 'Margaret Mead')
+    Quote(text: 'Always remember that you are absolutely unique. Just like everyone else.', author: 'Margaret Mead'),
+    Quote(text: 'The future belongs to those who believe in the beauty of their dreams.', author: 'Eleanor Roosevelt'),
+    Quote(text: 'You will face many defeats in life, but never let yourself be defeated.', author: 'Maya Angelou')
   ];
 
   @override
